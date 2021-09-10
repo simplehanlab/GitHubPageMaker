@@ -164,41 +164,41 @@ date: "2019-08-23 14:06"
 
   그후 firebase 홈페이지에 접속하여 다음과 같이 진행합니다.
 
-  ![img](\assets\images\ios\firebase-1.PNG)
-  ![img](\assets\images\ios\firebase-2.PNG)
-  ![img](\assets\images\ios\firebase-3.PNG)
-  <!-- ![img](\assets\images\ios\2017-09-17_22-33-53-1024x531.png) -->
+  ![img](\assets\built\images\ios\firebase-1.PNG)
+  ![img](\assets\built\images\ios\firebase-2.PNG)
+  ![img](\assets\built\images\ios\firebase-3.PNG)
+  <!-- ![img](\assets\built\images\ios\2017-09-17_22-33-53-1024x531.png) -->
   여기서 주의해야 할 부분은, 번들 ID는 프로젝트에서 생성한 번들 ID와 같아야합니다.
-  ![img](\assets\images\ios\firebase-4.PNG)
+  ![img](\assets\built\images\ios\firebase-4.PNG)
   GoogleService-info.plist 파일을 다운로드 받은 후 프로젝트 내부 폴더로 옮겨줍니다.
-  ![img](\assets\images\ios\firebase-5.PNG)
-  <!-- ![img](\assets\images\ios\2017-09-17_22-35-31.png) -->
+  ![img](\assets\built\images\ios\firebase-5.PNG)
+  <!-- ![img](\assets\built\images\ios\2017-09-17_22-35-31.png) -->
   전부 설정 후html에서 토큰 설정후 사용할 수 있습니다. (사진과 다르게 현재 프로젝트에서는 resources 폴더 내부에 저장하여 사용중입니다.) 또한 Push 사용을 위해 인증서 업로드가 필요한데 애플 개발자 사이트에서 인증서를 받은후 FCM에 업로드 하여 등록 가능합니다.
-  ![img](\assets\images\ios\1_DXho7RVN7BVRBHnFY2GQDQ.png)
-  ![img](\assets\images\ios\1_4z5mGIVWrAKLlS071Gxafw.png)
-  ![img](\assets\images\ios\dev-ios-45.png)
+  ![img](\assets\built\images\ios\1_DXho7RVN7BVRBHnFY2GQDQ.png)
+  ![img](\assets\built\images\ios\1_4z5mGIVWrAKLlS071Gxafw.png)
+  ![img](\assets\built\images\ios\dev-ios-45.png)
   그후 네이티브 소스에서 해당 소스를 통해 기본 설정을 할 수 있다고 되어있으나 현재 프로젝트에서는 cordova-fcm 플러그인을 통해 사용중이며 javascript에서 호출되어 사용되고 있습니다. (plugin/FCMPlugin.m)
   그 후 Cloud Messaging을 통해 메시지를 전송할 수 있습니다 (특정 토큰 선택 또는 전체 가능)
-  ![img](\assets\images\ios\dev-ios-63.png)
+  ![img](\assets\built\images\ios\dev-ios-63.png)
 
 ### 6. Splash 및 App icon 설정
 
   Images.xcassets 폴더 내부의 
   LaunchImage.launchimage 폴더 내부의 이미지 파일들이 Splash 이미지이며, AppIcon.appiconset 폴더의 내부 파일들이 App icon 이미지입니다. 이미지 파일 수정시 Splash 및 App icon 설정이 가능합니다. 또는 xcode 실행시 Resource 폴더 내부의 images.xcassets 내부로 접근시 해당 이미지를 좀더 편하게 수정 할 수 있도록 그림과 같은 화면이 출력됩니다.
-  ![img](\assets\images\ios\2019-06-21-5.35.08.png)
+  ![img](\assets\built\images\ios\2019-06-21-5.35.08.png)
 
 ### 7. 앱에서 필요한 퍼미션 권한 허용, 거부 출력
 
-  ![img](\assets\images\ios\2019-06-21-5.37.12.png)
+  ![img](\assets\built\images\ios\2019-06-21-5.37.12.png)
 
   대부분 권한은 이곳에서 설정 가능하며, 오류 발생시 resources 폴더 내부의 plist 파일의 key와 type value가 정상적으로 입력되었는지 확인합니다.
   
   퍼미션 종류는 다음 그림과 같습니다.
 
-  ![img](\assets\images\ios\info.png)
+  ![img](\assets\built\images\ios\info.png)
 
   해당 퍼미션을 info.plist에 추가하면 퍼미션 확인 메시지를 출력할수 있습니다
 
-  ![img](\assets\images\ios\onfo2.png)
+  ![img](\assets\built\images\ios\onfo2.png)
 
 이상으로 iOS - Cordova를 활용한 BLE 프로젝트 생성 및 필요한 환경 설정 세팅에 대해 포스트 했습니다.
