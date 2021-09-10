@@ -13,3 +13,10 @@ author: Simplehan
 {% include python-table-of-contents.html %}
 
 이 글은 python base 입니다.!!
+
+~~~javascript
+function syntaxHighlight(code) {
+    var foo = 'Hello World';
+    var bar = 100;
+}
+~~~
