@@ -34,4 +34,4 @@ subclass: 'post page'
 ##  [IT 컨설팅]
 - 클라우드 서버 컨설팅
 - 가상화폐 거래소 서버 컨설팅
-개발 의뢰 : [kslim@ohocomon.com](mailto:kslim@ohocomon.com){:target="_blank"}
+개발 의뢰 : [kslim@ohcomon.com](mailto:kslim@ohcomon.com){:target="_blank"}
