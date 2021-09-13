@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan
@@ -29,9 +29,9 @@ date: "2019-07-30 11:00"
 
 ## Nginx 설치
 
-```bash
+~~~bash
 $ sudo apt-get install nginx
-```
+~~~
 
 80 포트를 사용하는 또다른 서비스가 존재한다면 서비스를 중지하거나 삭제 한 후 nginx 설치
 
@@ -41,9 +41,9 @@ $ sudo apt-get install nginx
 
 Nginx 화면이 나오지 않을 시에는
 
-```bash
+~~~bash
 $ sudo service nginx restart
-```
+~~~
 
 명령어로 nginx 를 재시작 해본 뒤 다시 웹 브라우저에서 접속시도 nginx index 화면이 제대로 나온다면 이제 Let's Encrypt 를 이용하여 SSL 인증서를 받아보자
 
@@ -51,16 +51,16 @@ $ sudo service nginx restart
 
 apt-get 에 certbot 저장소 추가
 
-```bash
+~~~bash
 $ sudo add-apt-repository ppa:certbot/certbot
-```
+~~~
 
 패키지 목록을 업데이트 한 후에 certbot 을 설치
 
-```bash
+~~~bash
 $ sudo apt-get update
 $ sudo apt-get install python-certbot-nginx
-```
+~~~
 
 
 
@@ -74,9 +74,9 @@ SSL 인증을 하기에 앞서 구매한 도메인이 없다면, certbot 에서 
 
 ③ 번 까지 진행을 했다면 ngrok을 압춘을 푼 폴더에서 
 
-```bash
+~~~bash
 $ sudo ./ngrok http http://localhost
-```
+~~~
 
 를 실행 해보자 그러면 이러한 화면이 나올 것이다. 
 
@@ -90,15 +90,15 @@ Fowarding 부분에 있는 http 주소를 복사( CTRL + C 는 ngrok을 중지�
 
 설치한 certbot 을 이용하여 인증서를 발급 받을 것이다. 여기에선 인증서만 필요하므로 certonly 형식으로 인증서만 서버에 받아 오도록 진행 해보자
 
-```bash
+~~~bash
 $ sudo certbot certonly --nginx -d [도메인 주소]
-```
+~~~
 
 저 도메인 주소에 ngrok 으로 생성한 도메인을 넣어 주도록 하자 
 
-```bash
+~~~bash
 $ sudo certbot certonly --nginx -d 8e7dcf95.ngrok.io
-```
+~~~
 
 도메인 주소 부분에 http 또는 ' / ' 가 포함되지 않도록 주의 하자
 
@@ -110,10 +110,10 @@ Congratulation! 이라는 단어와 함께 인증이 완료되었다고 나올 �
 
 인증 완료 문구에서 보면 
 
-```shell
+~~~shell
 /etc/letsencrypt/live/8e7dcf95.ngrok.io/fullchain.pem
 /etc/letsencrypt/live/8e7dcf95.ngrok.io/privkey.pem
-```
+~~~
 
 같은 경로가 보일 텐데 이 경로가 인증서가 저장되어진 경로이다. 해당 경로로 들어가 인증 된 파일을 확인해 보자
 
@@ -125,13 +125,13 @@ Congratulation! 이라는 단어와 함께 인증이 완료되었다고 나올 �
 
 Nginx 의 설정 파일을 수정 ( 여기서는 /etc/nginx/site-available/default 파일을 수정)
 
-```bash
+~~~bash
 $ sudo vim /etc/nginx/site-available/default
-```
+~~~
 
 파일 내부를 확인해 보면 80 port 설정에 대한 server 블록이 존재할 것이다. 그 server 블록 아래에 443(SSL) port 에 대한 server 블록을 추가해 주자 
 
-```shell
+~~~shell
 # 80 포트의 대한 설정은 수정 하지 않는다. 
 server {
 	    ...
@@ -166,7 +166,7 @@ server {
                  try_files $uri $uri/ =404;             
         }
 }
-```
+~~~
 
 ssl on 을 통해 SSL 을 활성화 시키고 
 
@@ -176,9 +176,9 @@ ssl_certificate_key 에 발급받은 인증서 중 privkey.pem 이 위치한 경
 
 파일을 저장 하고 나온 뒤 nginx 서버를 재시작 하자!
 
-```bash
+~~~bash
 $ sudo service nginx restart
-```
+~~~
 
 서버 재시작이 정상적으로 완료 되면 ngrok 에서 발급 받은 주소가 아닌 서버 포트 번호를 통해 HTTPS 보안 접속을 시도해 보자 
 

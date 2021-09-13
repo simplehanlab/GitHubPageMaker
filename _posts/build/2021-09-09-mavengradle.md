@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 title: Maven과 Gradle 차이
 categories:

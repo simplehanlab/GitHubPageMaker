@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan
@@ -24,9 +24,9 @@ SSH (Secure Shell Protocol) 이란 네트워크 프로토콜중 하나로, 컴�
 
 #### 1. openssh-server 설치 유무 확인
 
-```bash
+~~~bash
 $ dpkg -l | grep openssh
-```
+~~~
 
 ![img](\assets\built\images\ssh-how_to_setup_ssh\dpkg-openssh.jpg)
 
@@ -34,17 +34,17 @@ $ dpkg -l | grep openssh
 
 #### 2.openssh-server 설치
 
-```bash
+~~~bash
 $ apt-get install openssh-server
-```
+~~~
 
 ![img](\assets\built\images\ssh-how_to_setup_ssh\install-openssh-server.jpg)
 
 #### 3. openssh-server 설치 확인
 
-```bash
+~~~bash
 $ dpkg -l | grep openssh
-```
+~~~
 
 ![img](\assets\built\images\ssh-how_to_setup_ssh\check-install-openssh.jpg)
 
@@ -52,9 +52,9 @@ $ dpkg -l | grep openssh
 
 ##### - server ip address 확인
 
-```bash
+~~~bash
 $ ifconfig
-```
+~~~
 
 ![img](\assets\built\images\ssh-how_to_setup_ssh\check-ipadress.jpg)
 

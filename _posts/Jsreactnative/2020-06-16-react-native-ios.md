@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan   

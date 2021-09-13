@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan
@@ -53,19 +53,19 @@ date: "2019-11-06 17:25"
   그 후 터미널에 다음과 같이 입력하여 
 
   React로 프로젝트를 생성후 Google Map API를 설치합니다.
-  ```terminal
+  ~~~
   npm init react-app AppName
   npm install --save google-maps-react
   yarn install
-  ```
+  ~~~
 
   그 후 컨테이너에서 google-maps-react를 import합니다.
-  ```javascript
+  ~~~javascript
   import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
-  ```
+  ~~~
 
   렌더링할 내용은 다음과 같습니다.
-  ```javascript
+  ~~~javascript
   render() {
     const mapStyles = {
       width: '100%',
@@ -83,16 +83,16 @@ date: "2019-11-06 17:25"
       </Fragment>
     );
   }
-  ```
+  ~~~
 
   또한 API를 사용하기 위한 KEY값을 설정하기 위해 
   
   export에 받아온 값을 저장합니다.
-  ```javascript
+  ~~~javascript
   export default GoogleApiWrapper({
     apiKey: 'YOUR GOOGLE MAPS API KEY 입력'
   })(YourCntName);
-  ```
+  ~~~
 
 ### 2. 사용 방법
   1. HandlerEvnet
@@ -102,12 +102,12 @@ date: "2019-11-06 17:25"
   on(HandlerEventType) 의 형태로 되어있으며,
 
   다음과 같이 이벤트를 추가 할수 있습니다.
-  ```javascript
+  ~~~javascript
   <Map
     google={this.props.google}
     onClick ={this.onEventChecker}
   />
-  ```
+  ~~~
 
   파라미터는 총 3개입니다.
 
@@ -117,19 +117,19 @@ date: "2019-11-06 17:25"
 
   geo는 좌표값을 받을수 있는 함수를 넘겨줍니다.
 
-  ```javascript
+  ~~~javascript
   onEventChecker = (e, aug, geo) => {
     console.log(e);
     console.log(aug);
     console.log(geo);
   }
-  ```
+  ~~~
 
   이러한 핸들러 이벤트를 활용하여 
   
   지도에 마커를 추가하는 함수를 생성해 봅시다.
 
-  ```javascript
+  ~~~javascript
   addMarkers = async (e, aug, geoData) => {
     // console.log(aug);
     const {stores} = this.state;
@@ -141,7 +141,7 @@ date: "2019-11-06 17:25"
       stores: stateData
     });
   }
-  ```
+  ~~~
 
   그리고 배열을 그려주는 함수를 생성하여
 

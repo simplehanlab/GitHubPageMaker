@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan
@@ -59,11 +59,11 @@ date: "2020-07-14 18:45"
 
 초기화면에서 기본값으로 로그인 할 경우
 
-```
+~~~
 //기본값
 사용자명 : root
 패스워드 : autoset 
-```
+~~~
 
 ![img](\assets\built\images\wordpress\b8.png)
 

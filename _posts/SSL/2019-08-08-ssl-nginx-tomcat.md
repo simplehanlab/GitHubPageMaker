@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/images/bus.jpg
+cover: assets/built/images/bus.png
 navigation: True
 class: post-template
 author: Simplehan
@@ -32,13 +32,13 @@ nginx 설치 방법은 [Letsencrypt + Nginx SSL인증서(HTTPS) 적용](https://
 
 Nginx 의 설정 파일을 수정 ( 여기서는 /etc/nginx/site-available/default 파일을 수정)
 
-```bash
+~~~bash
 $ vim /etc/nginx/site-available/default
-```
+~~~
 
 server 블록 상단에 톰캣 서버에 대한 경로를 지정해 준 뒤 server 블록 내부에 location 설정 부분 수정 - 80포트와 443 포트에 대해 톰캣으로 연결되도록 설정을 수정한다.
 
-```shell
+~~~shell
 ...
 # 톰캣 위치를 지정
 upstream tomcat {
@@ -92,24 +92,24 @@ server {
                 proxy_set_header Host $http_host;
         }
 }
-```
+~~~
 
 default 파일 내 location 설정 안에
 
-```shell
+~~~shell
 proxy_pass http://tomcat;
 proxy_set_header X-Real-IP $remote_addr;
 proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 proxy_set_header Host $http_host;
-```
+~~~
 
 이 구문을 추가하면 된다. 
 
 파일을 저장한 뒤 nginx service 재시작 
 
-```bash
+~~~bash
 $ service nginx restart
-```
+~~~
 
  다시 서버 ip로 접속시에 기존 nginx 페이지가 아닌 톰캣 서버 index 페이지가 나타나는 것을 확인 할 수 있을 것이다. (http, https 둘다 접속시도 해보자)
 
