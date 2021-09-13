@@ -9,7 +9,7 @@ subclass: 'post page'
 ---
 
 <div id="post-index" class="well article">
-{% capture site_categories %}{% for tag in site.categories %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% capture site_categories %}{% for category in site.categories %}{{ category | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
 {% assign categories_list = site_categories | split:',' | sort %}
 
 <ul class="entry-meta inline-list">
