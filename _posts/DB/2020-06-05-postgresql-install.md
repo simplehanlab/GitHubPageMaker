@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover: assets/built/images/bus.png
+cover: assets/built/images/database/postgresql/postgresql-logo.png
 navigation: True
 class: post-template
 author: Simplehan
