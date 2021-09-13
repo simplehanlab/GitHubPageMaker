@@ -36,7 +36,7 @@ Truststore라는 인증서들을 보관하는 파일(JRE/lib/security/cacerts)�
 
 Openjdk 경로/jre/lib/security 경로의 폴더를 보게 되면 cacerts 라는 파일이 있다. 리눅스 명령어 ls-l 을 통해 내용을 확인해 보면
 
-![](D:\Node.js\workspace\simplehanlab.github.io\assets\images\openjdk-cacerts\cacerts_info.png)
+![](D:\Node.js\workspace\simplehanlab.github.io\assets\built\images\openjdk-cacerts\cacerts_info.png)
 
 
 

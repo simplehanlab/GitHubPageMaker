@@ -217,7 +217,7 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 1.4.4 0.4.18
 
 다운로드 및 설치가 완료 되면 fabric-samples 폴더가 생성되고 그 안에 아래 그림과 같이 생성됨을 확인 한 뒤
 
-![](D:\Node.js\workspace\simplehanlab.github.io\assets\images\hyperledger-fabric\chapter1\1.PNG)
+![](D:\Node.js\workspace\simplehanlab.github.io\assets\built\images\hyperledger-fabric\chapter1\1.PNG)
 
  /bin 폴더 내에 해당 파일이 존재하는지 확인 
 
@@ -230,7 +230,7 @@ curl -sSL https://bit.ly/2ysbOFE | bash -s -- 2.0.0 1.4.4 0.4.18
 - `peer`
 - `fabric-ca-client`
 
-![](D:\Node.js\workspace\simplehanlab.github.io\assets\images\hyperledger-fabric\chapter1\2.PNG)
+![](D:\Node.js\workspace\simplehanlab.github.io\assets\built\images\hyperledger-fabric\chapter1\2.PNG)
 
 해당 바이너리를 사용하지 위해 환경 변수 설정
 

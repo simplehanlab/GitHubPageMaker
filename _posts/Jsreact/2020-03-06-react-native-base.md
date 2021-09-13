@@ -51,7 +51,7 @@ react-native run-ios  // ios 일 때
 react-native run-android // android 일 때
 ```
 
-![img](\assets\images\react\baseinstallok.png)
+![img](\assets\built\images\react\baseinstallok.png)
 
 설치가 완료되면 위와 같은 메시지가 표시된다.
 

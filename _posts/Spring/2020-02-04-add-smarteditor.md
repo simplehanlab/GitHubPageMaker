@@ -33,7 +33,7 @@ date: "2020-02-04 17:00"
 
 [SmartEditor github 다운로드 페이지](https://github.com/naver/smarteditor2/releases)에서 배포판을 다운받을 수 있다. **처음엔 zip 파일을 다운받아서 진행했는데 뭔가 파일이 빠져있는 것 같았다. 안에 skin.html에서 경로에 없는 파일을 참조하고 있길래 zip 파일 리소스는 다 지우고 tgz 파일을 다시 받아서 진행했다.**
 
-![add-smarteditor-1](\assets\images\add-smarteditor\add-smarteditor-1.JPG)
+![add-smarteditor-1](\assets\built\images\add-smarteditor\add-smarteditor-1.JPG)
 
 
 
@@ -41,7 +41,7 @@ date: "2020-02-04 17:00"
 
 tgz 파일의 압축을 풀어보면 package 폴더가 나오고 안에 들어가면 뭔가 파일이 몇개 있는데, 다 무시하고 dist 폴더 안의 내용만 있으면 된다. *(smarteditor2-2.10.0/package/dist)*
 
-![add-smarteditor-2](\assets\images\add-smarteditor\add-smarteditor-2.JPG)
+![add-smarteditor-2](\assets\built\images\add-smarteditor\add-smarteditor-2.JPG)
 
 
 
@@ -49,7 +49,7 @@ tgz 파일의 압축을 풀어보면 package 폴더가 나오고 안에 들어�
 
 해당 폴더 안의 파일들을 전부 복사해서 src/resources/static/libs/smarteditor 폴더에 넣어주자.
 
-![add-smarteditor-3](\assets\images\add-smarteditor\add-smarteditor-3.JPG)
+![add-smarteditor-3](\assets\built\images\add-smarteditor\add-smarteditor-3.JPG)
 
 
 
@@ -59,7 +59,7 @@ tgz 파일의 압축을 풀어보면 package 폴더가 나오고 안에 들어�
 
 다음으로 smarteditor 용 controller와 view를 작성해보자. 먼저 *com.example.demo.smarteditor.controller* 패키지를 만들고 *SmartEditorController.java* 파일을 만들자.
 
-![add-smarteditor-4](\assets\images\add-smarteditor\add-smarteditor-4.JPG)
+![add-smarteditor-4](\assets\built\images\add-smarteditor\add-smarteditor-4.JPG)
 
 ```java
 package com.example.demo.smarteditor.controller;
@@ -82,7 +82,7 @@ public class SmartEditorController {
 
 그 다음 JSP 파일을 만들자. 이름은 controller에서 지정해준 것 처럼 smartEditor.jsp로 만들었다. js 코드는 간단하기 때문에 jsp 내부 하단에 바로 작성하였다.
 
-![add-smarteditor-5](\assets\images\add-smarteditor\add-smarteditor-5.JPG)
+![add-smarteditor-5](\assets\built\images\add-smarteditor\add-smarteditor-5.JPG)
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
@@ -123,7 +123,7 @@ public class SmartEditorController {
 
 이제 브라우저에서 http://localhost:8080/smarteditor 로 접속해보자. 아래와 같이 나오면 성공이다.
 
-![add-smarteditor-6](\assets\images\add-smarteditor\add-smarteditor-6.JPG)
+![add-smarteditor-6](\assets\built\images\add-smarteditor\add-smarteditor-6.JPG)
 
 
 
@@ -179,7 +179,7 @@ public class SmartEditorController {
 
 버튼을 하나 추가했고, 해당 버튼에 이벤트를 하나 추가했다. 이제 에디터에 아무 내용을 작성한 뒤 개발자 도구의 콘솔창을 한번 봐보자.
 
-![add-smarteditor-7](\assets\images\add-smarteditor\add-smarteditor-7.JPG)
+![add-smarteditor-7](\assets\built\images\add-smarteditor\add-smarteditor-7.JPG)
 
 콘솔에 HTML 구조로 찍힌다면 성공했다.
 

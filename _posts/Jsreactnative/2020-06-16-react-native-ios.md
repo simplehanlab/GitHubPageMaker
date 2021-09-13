@@ -131,7 +131,7 @@ iOS 개발을 하기 위해서는 Xcode가 필요합니다.
 
 그 후 상단 메뉴에서 Xcode > Preferences... > Locations로 이동하여 아래와 같이 Command Line Tools가 잘 설정되었는지 확인합니다.
 
-![img](\assets\images\react-native-ios\r1.png)
+![img](\assets\built\images\react-native-ios\r1.png)
 
 만약 사진과 같이 설정되어 있지 않다면,
 
@@ -193,5 +193,5 @@ npm run ios
 
 잘 실행이 되었다면, 아래와 같은 화면을 확인할 수 있습니다.
 
-![img](\assets\images\react-native-ios\r2.png)
-![img](\assets\images\react-native-ios\r3.png)
+![img](\assets\built\images\react-native-ios\r2.png)
+![img](\assets\built\images\react-native-ios\r3.png)

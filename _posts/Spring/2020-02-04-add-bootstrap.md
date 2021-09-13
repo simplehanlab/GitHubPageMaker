@@ -39,19 +39,19 @@ Bootstrap을 적용하는 방법엔 크게 3가지가 있다. 리소스를 직�
 
 일단 [Bootstrap 다운로드 사이트](https://getbootstrap.com/docs/4.4/getting-started/download/)에 접속하여 Bootstrap 리소스를 다운받자.
 
-![add-bootstrap-1](\assets\images\add-bootstrap\add-bootstrap-1.JPG)
+![add-bootstrap-1](\assets\built\images\add-bootstrap\add-bootstrap-1.JPG)
 
 
 
 다운로드 받은 리소스를 내 프로젝트의 src/main/resources/static/libs 폴더 안에 넣어주자.
 
-![add-bootstrap-2](\assets\images\add-bootstrap\add-bootstrap-2.JPG)
+![add-bootstrap-2](\assets\built\images\add-bootstrap\add-bootstrap-2.JPG)
 
 
 
 추가로 bootstrap 사용에 jQuery가 필요하므로 [jQuery 다운로드 사이트](https://jquery.com/download/)에서 jQuery도 다운받아주자. *(jQuery 역시 CDN, 패키지 매니저를 통해 적용할 수 있다.)*
 
-![add-bootstrap-3](\assets\images\add-bootstrap\add-bootstrap-3.JPG)
+![add-bootstrap-3](\assets\built\images\add-bootstrap\add-bootstrap-3.JPG)
 
 
 
@@ -110,7 +110,7 @@ CDN 서비스를 이용하려면 bootstrap, jQuery를 다운로드 받을 필요
 
 코드 적용 후 브라우저에서 키보드의**F12**키를 눌러서 개발자 도구를 켠 뒤에 **Network**탭을 클릭한 뒤 브라우저를 새로고침 해보자. 그 후 아래처럼 리소스를 에러없이 불러오면 성공이다.
 
-![add-bootstrap-4](\assets\images\add-bootstrap\add-bootstrap-4.JPG)
+![add-bootstrap-4](\assets\built\images\add-bootstrap\add-bootstrap-4.JPG)
 
 
 
@@ -171,4 +171,4 @@ CDN 서비스를 이용하려면 bootstrap, jQuery를 다운로드 받을 필요
 </html>
 ```
 
-![add-bootstrap-5](\assets\images\add-bootstrap\add-bootstrap-5.JPG)
+![add-bootstrap-5](\assets\built\images\add-bootstrap\add-bootstrap-5.JPG)

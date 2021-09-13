@@ -28,7 +28,7 @@ STS를 받기 위해선 STS 사이트에 접속해야한다. 아래 주소를 �
 
 STS 사이트에 접속하면 아래 사진과 같이 IDE 다운로드 링크가 있으니 필요한 걸 받으면 된다. 본 포스트는 Windows 버전으로 진행한다. 버전은 4.5.1.RELEASE 버전으로 진행한다.
 
-![start-spring-1](\assets\images\start-spring\start-spring-1.JPG)
+![start-spring-1](\assets\built\images\start-spring\start-spring-1.JPG)
 
 Windows 버전을 다운받으면 jar 파일을 내려받게 된다. 이 jar파일의 압축을 풀면 **contents** 폴더가 나오게 되는데 이 안에 STS가 있다.
 
@@ -38,13 +38,13 @@ Windows 버전을 다운받으면 jar 파일을 내려받게 된다. 이 jar파�
 
 다운받은 STS를 실행하면 아래와 같이 뜬다.
 
-![start-spring-2](\assets\images\start-spring\start-spring-2.JPG)
+![start-spring-2](\assets\built\images\start-spring\start-spring-2.JPG)
 
 좌측 Package Explorer 창에서 **Create new Spring Starter Project**를 클릭하면 Spring 프로젝트의 생성을 도와주는 프롬프트가 나오게 된다.
 
 
 
-![start-spring-3](\assets\images\start-spring\start-spring-3.JPG)
+![start-spring-3](\assets\built\images\start-spring\start-spring-3.JPG)
 
 [https://start.spring.io](https://start.spring.io) 에서 프로젝트 생성에 필요한 정보를 받아올 수 있다. Spring 프로젝트는 Web상에서 생성할 수도 있는데 해당 링크에 들어가서 필요한 정보를 입력, 체크한 뒤 Generate를 하면 프로젝트를 내려받을 수가 있다. 궁금하면 링크에 접속해보자.
 
@@ -52,19 +52,19 @@ Windows 버전을 다운받으면 jar 파일을 내려받게 된다. 이 jar파�
 
 
 
-![start-spring-4](\assets\images\start-spring\start-spring-4.JPG)
+![start-spring-4](\assets\built\images\start-spring\start-spring-4.JPG)
 
 Next를 입력하면 Spring에서 제공하는 서비스 모듈을 선택하여 프로젝트 생성 시 같이 포함하여 생성할 수 있다. 여기서 필요한 모듈을 선택하면 되는데, 본 포스트에서는 아래와 같이 Web의 Spring Web 항목만 체크하여 만들었다.
 
 
 
-![start-spring-5](\assets\images\start-spring\start-spring-5.JPG)
+![start-spring-5](\assets\built\images\start-spring\start-spring-5.JPG)
 
 필요한 모듈을 모두 체크하였으면 **Finish**버튼을 클릭하여 프로젝트를 생성한다.
 
 
 
-![start-spring-6](\assets\images\start-spring\start-spring-6.JPG)
+![start-spring-6](\assets\built\images\start-spring\start-spring-6.JPG)
 
 프로젝트가 생성되면 구조는 위의 이미지와 같다.
 
@@ -113,13 +113,13 @@ my-project
 
 모듈 추가가 완료됬다면 다음으로 java 파일을 추가해보자. MVC 패턴을 적용하여 페이지를 만들 예정이다. 그렇기 때문에 일단 Controller를 만들어준다. 기본 생성된 프로젝트는 아래 이미지와 같이 스프링부트 기본 java 파일만 있다.
 
-![start-spring-7](\assets\images\start-spring\start-spring-7.JPG)
+![start-spring-7](\assets\built\images\start-spring\start-spring-7.JPG)
 
 
 
 여기에 패키지를 추가하고 Controller를 추가해보자. 패키지는 com.example.demo.main으로 만들고, 그 아래에 com.example.demo.main.controller 패키지를 하나 더 추가한 뒤 해당 패키지에 controller를 만든다. 아래 이미지를 보자. *(controller 패키지는 web 패키지로 사용하는 경우도 있다. // com.example.demo.main.web)*
 
-![start-spring-8](\assets\images\start-spring\start-spring-8.JPG)
+![start-spring-8](\assets\built\images\start-spring\start-spring-8.JPG)
 
 
 
@@ -148,7 +148,7 @@ public class MainController {
 
 어느정도 자동으로 처리해주는 부분이 있지만, 기본 폴더나 확장자 등 prefix와 suffix는 따로 잡아줘야 한다. 이를 application.properties 라는 설정 파일에서 잡아줄 수 있다. 이 파일은 아래 이미지와 같이 스프링 프로젝트 생성 시 src/main/resources 폴더 안에 자동으로 생성된다.
 
-![start-spring-9](\assets\images\start-spring\start-spring-9.JPG)
+![start-spring-9](\assets\built\images\start-spring\start-spring-9.JPG)
 
 
 
@@ -167,7 +167,7 @@ prefix는 controller에서 return된 문자열의 앞에 붙는 문자이고, su
 
 properties 파일에 위 두줄을 추가했으면 이제 jsp 파일을 추가해주자. 아래 이미지처럼 추가해주면 된다.
 
-![start-spring-10](\assets\images\start-spring\start-spring-10.JPG)
+![start-spring-10](\assets\built\images\start-spring\start-spring-10.JPG)
 
 
 
@@ -194,13 +194,13 @@ properties 파일에 위 두줄을 추가했으면 이제 jsp 파일을 추가�
 
 이 Boot Dashboard를 보면 local 항목이 있을텐데 그 안에 내 프로젝트가 있다. 내 프로젝트를 선택한 뒤 그 위의 실행 혹은 디버그 버튼을 클릭하여 프로젝트를 실행하자. 아래 이미지를 참조
 
-![start-spring-11](\assets\images\start-spring\start-spring-11.JPG)
+![start-spring-11](\assets\built\images\start-spring\start-spring-11.JPG)
 
 
 
 실행이 완료되면 몇번 포트로 실행이 됬는지 콘솔에 출력된다. 아래 이미지 참조
 
-![start-spring-12](\assets\images\start-spring\start-spring-12.JPG)
+![start-spring-12](\assets\built\images\start-spring\start-spring-12.JPG)
 
 
 
@@ -208,7 +208,7 @@ properties 파일에 위 두줄을 추가했으면 이제 jsp 파일을 추가�
 
 이제 사용하는 브라우저에서 http://localhost:8080에 접속해보자. 아래 이미지처럼 Hello world!가 화면에 찍히면 성공!
 
-![start-spring-13](\assets\images\start-spring\start-spring-13.JPG)
+![start-spring-13](\assets\built\images\start-spring\start-spring-13.JPG)
 
 
 
@@ -216,7 +216,7 @@ properties 파일에 위 두줄을 추가했으면 이제 jsp 파일을 추가�
 
 이제 기본 main.jsp 페이지에서 이름과 나이를 출력하는 간단한 model을 만들어보자. com.example.demo.main.vo 패키지를 추가한 뒤 Person.java 파일을 추가해주자. *(vo 패키지는 dto 등으로도 쓸 수 있다. // 더 세세하게 들어가면 dto와 vo의 차이점이 있지만 본 포스팅에서는 그렇게까지 나누지 않을 예정이고 그냥 편의상 vo로 사용)*
 
-![start-spring-14](\assets\images\start-spring\start-spring-14.JPG)
+![start-spring-14](\assets\built\images\start-spring\start-spring-14.JPG)
 
 
 
@@ -294,7 +294,7 @@ public class MainController {
 
 그 다음 서버를 재시작하여 브라우저에 아래와 같이 잘 나오는 지 확인해보자.
 
-![start-spring-15](\assets\images\start-spring\start-spring-15.JPG)
+![start-spring-15](\assets\built\images\start-spring\start-spring-15.JPG)
 
 
 
@@ -304,7 +304,7 @@ public class MainController {
 
 일단 com.example.demo.main.controller 패키지 안에 MainRestController.java 파일을 추가한다.
 
-![start-spring-16](\assets\images\start-spring\start-spring-16.JPG)
+![start-spring-16](\assets\built\images\start-spring\start-spring-16.JPG)
 
 
 
@@ -334,7 +334,7 @@ public class MainRestController {
 
 그 다음 http://localhost:8080/api 로 접속하여 Person 객체를 제대로 반환해주는 지 확인한다.
 
-![start-spring-17](\assets\images\start-spring\start-spring-17.JPG)
+![start-spring-17](\assets\built\images\start-spring\start-spring-17.JPG)
 
 
 
@@ -350,7 +350,7 @@ server.port=8081
 
 그 다음 서버를 재시작한 뒤 http://localhost:8081로 접속하여 제대로 접속이 되는 지 확인해보자.
 
-![start-spring-18](\assets\images\start-spring\start-spring-18.JPG)
+![start-spring-18](\assets\built\images\start-spring\start-spring-18.JPG)
 
 
 

@@ -33,7 +33,7 @@ date: "2020-02-28 18:00"
 
 **오픈뱅킹에서 제공하는 API 명세서 중 본인인증 요청 API 확인**
 
-![img](\assets\images\openbank\post_2\openbank_2_1.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_1.png)
 
 URL : https://openapi.openbanking.or.kr/oauth/2.0/authorize
 
@@ -58,11 +58,11 @@ Method : GET
 
 **scope** : Access Token 권한 범위 (다중 scope 가능)
 
-![img](\assets\images\openbank\post_2\openbank_2_2.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_2.png)
 
 **redirect_uri** : 마이페이지 > 내앱관리 > 추가정보 에서 사용자 인증 이후 redirect 될 uri 를 설정 후 해당 주소 사용
 
-![img](\assets\images\openbank\post_2\openbank_2_3.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_3.png)
 
 **auth_type** : 
 
@@ -76,7 +76,7 @@ Method : GET
 
 **state** : CSRF 보안위협에 대응하기 위해 이용기관이 셋팅하는 난수값(32Byte 로 고정)
 
-※ 각 파라미터에 대한 자세한 설명은 [오픈뱅킹 서비스 API 목록](\assets\images\openbank\post_2\api_list.pdf) (Ctrl + click 시 새탭으로 열기) 의 사용자 인증 에서 확인
+※ 각 파라미터에 대한 자세한 설명은 [오픈뱅킹 서비스 API 목록](\assets\built\images\openbank\post_2\api_list.pdf) (Ctrl + click 시 새탭으로 열기) 의 사용자 인증 에서 확인
 
 위의 form 코드를 window.open 함수를 이용한 새창에서 호출 스크립트 코드 
 
@@ -90,23 +90,23 @@ $authorizeFrm.submit();
 
 새창에서 해당 정보를 가지고 호출을 하면 다음과 같은 화면을 볼 수 있다. 
 
-![img](\assets\images\openbank\post_2\openbank_2_4.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_4.png)
 
 이후 각 인증절차에 따라 인증을 진행하면 파라미터로 설정한 redirect_uri 를 통해 Access Token을 발급 받기 위한 code(authorization_code) 를 리턴 받을 수 있다.
 
 **※응답 형식**
 
-![img](\assets\images\openbank\post_2\openbank_2_5.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_5.png)
 
 redirect_uri 로 설정된 경로에서 code 값을 추출 
 
-![img](\assets\images\openbank\post_2\openbank_2_6.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_6.png)
 
 #### **사용자 토큰 발급 ** (3-legged)
 
 **<사용자 토큰 발급 API 설명서>**
 
-![img](\assets\images\openbank\post_2\openbank_2_7.png)
+![img](\assets\built\images\openbank\post_2\openbank_2_7.png)
 
 추출한 code 값을 이용하여 토큰 발급 API 요청을 진행한다. 
 

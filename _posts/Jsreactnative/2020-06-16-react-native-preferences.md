@@ -44,9 +44,9 @@ date: "2020-06-16 16:40"
 
 
 
-![img](\assets\images\react\react-native-android\react-native-android-01.png)
-![img](\assets\images\react\react-native-android\react-native-android-02.png)
-![img](\assets\images\react\react-native-android\react-native-android-03.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-01.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-02.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-03.png)
 
 
 
@@ -60,7 +60,7 @@ date: "2020-06-16 16:40"
 [https://nodejs.org/ko/download/](https://nodejs.org/ko/download/)
 
 
-![img](\assets\images\react\react-native-android\react-native-android-09.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-09.png)
 
 
 
@@ -75,7 +75,7 @@ date: "2020-06-16 16:40"
 
 ### Visual Studio를 실행 후 터미널에서 react-native cli 설치 명령어를 입력한다
 
-![img](\assets\images\react\react-native-android\react-native-android-10.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-10.png)
 명령어 : npm install -g react-native-cli
 
 
@@ -83,7 +83,7 @@ date: "2020-06-16 16:40"
 
 
 
-![img](\assets\images\react\react-native-android\react-native-android-06.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-06.png)
 설치가 완료되면 React-native 프로젝트를 생성한다
 
 
@@ -91,7 +91,7 @@ date: "2020-06-16 16:40"
 
 
 
-![img](\assets\images\react\react-native-android\react-native-android-07.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-07.png)
 명령어 : react-native run-android
 
 
@@ -101,7 +101,7 @@ date: "2020-06-16 16:40"
 
 
 
-![img](\assets\images\react\react-native-android\react-native-android-11.png)
+![img](\assets\built\images\react\react-native-android\react-native-android-11.png)
 
 
 

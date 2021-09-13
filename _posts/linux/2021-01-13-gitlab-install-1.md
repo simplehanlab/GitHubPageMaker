@@ -37,7 +37,7 @@ sudo systemctl reload firewalld
 yum list installed | grep policycoreutils-python
 ```
 
-![image-20210113144623259](\assets\images\gitlab\1\image-20210113144623259.png)
+![image-20210113144623259](\assets\built\images\gitlab\1\image-20210113144623259.png)
 
 
 ###### 2. openssh-server
@@ -46,7 +46,7 @@ yum list installed | grep policycoreutils-python
 yum list installed | grep openssh-server
 ```
 
-![image-20210113144640124](\assets\images\gitlab\1\image-20210113144640124.png)
+![image-20210113144640124](\assets\built\images\gitlab\1\image-20210113144640124.png)
 
 ###### 3.  openssh-server 구동 여부 확인
 
@@ -54,7 +54,7 @@ yum list installed | grep openssh-server
 systemctl status sshd
 ```
 
-![image-20210113144737316](\assets\images\gitlab\1\image-20210113144737316.png)
+![image-20210113144737316](\assets\built\images\gitlab\1\image-20210113144737316.png)
 
 ###### 4. 메일링 서비스를 위한 postfix 설치(필요시)
 

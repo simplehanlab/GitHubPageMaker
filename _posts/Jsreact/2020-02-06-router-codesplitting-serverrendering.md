@@ -190,7 +190,7 @@ export default App;
 
 결과
 
-![img](\assets\images\react\splitting.png)
+![img](\assets\built\images\react\splitting.png)
 
 
 App 컴포넌트에 버튼 하나를 만들고 위의 컴포넌트를 호출하도록 해보자

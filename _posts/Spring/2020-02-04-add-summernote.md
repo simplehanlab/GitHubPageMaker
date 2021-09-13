@@ -31,13 +31,13 @@ date: "2020-02-04 18:00"
 
 일단 처음으로 [Summernote 다운로드 페이지](https://github.com/summernote/summernote/releases)에서 리소스를 다운받자. 필자는 zip 파일을 다운받았다.
 
-![add-summernote-2](\assets\images\add-summernote\add-summernote-2.JPG)
+![add-summernote-2](\assets\built\images\add-summernote\add-summernote-2.JPG)
 
 
 
 다운받은 zip 파일의 압축을 푼 뒤, dist폴더 내부의 파일들을 src/resources/libs/summernote에 넣어주자.
 
-![add-summernote-3](\assets\images\add-summernote\add-summernote-3.JPG)
+![add-summernote-3](\assets\built\images\add-summernote\add-summernote-3.JPG)
 
 
 
@@ -45,7 +45,7 @@ date: "2020-02-04 18:00"
 
 다음으로 summernote용 controller와 view를 작성해보자. 먼저 *com.example.demo.summernote.controller* 패키지를 만들고 *SummernoteController.java* 파일을 만들자.
 
-![add-summernote-4](\assets\images\add-summernote\add-summernote-4.JPG)
+![add-summernote-4](\assets\built\images\add-summernote\add-summernote-4.JPG)
 
 ```java
 package com.example.demo.summernote.controller;
@@ -66,7 +66,7 @@ public class SummernoteController {
 
 그 다음 JSP 파일을 만들자. 이름은 controller에서 지정해준 것 처럼 summernote.jsp로 만들었다.
 
-![add-summernote-5](\assets\images\add-summernote\add-summernote-5.JPG)
+![add-summernote-5](\assets\built\images\add-summernote\add-summernote-5.JPG)
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
@@ -109,7 +109,7 @@ $(document).ready(function() {
 
 이제 브라우저에서 http://localhost:8080/summernote로 접속하여 summernote 에디터가 잘 뜨는지 확인해보자.
 
-![add-summernote-6](\assets\images\add-summernote\add-summernote-6.JPG)
+![add-summernote-6](\assets\built\images\add-summernote\add-summernote-6.JPG)
 
 
 

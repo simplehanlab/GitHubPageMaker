@@ -28,7 +28,7 @@ date: "2020-02-14 17:35"
 
   안트로이드 어플리케이션 프로젝트의 구조는 크게 4가지로 나눌 수 있다.
   <!-- 안드로이드스튜디오 프로젝트 좌측 부분 스크린샷 넣을 것. -->
-  ![img](\assets\images\android\basic_structure.png)
+  ![img](\assets\built\images\android\basic_structure.png)
 
     1. manifests - 'AndroidManifest.xml' 안드로이드의 컨트롤 타워라고 할 수 있다. 어플리케이션을 구동하는데 필요한 설정값을 관리해주는 곳이다.
     2. java - 클래스를 관리하는 폴더이다.
@@ -38,7 +38,7 @@ date: "2020-02-14 17:35"
 
   a. AndroidManifest.xml
   <!-- 매니페스트 스크린샷. -->
-  ![img](\assets\images\android\androidmanifest.png)
+  ![img](\assets\built\images\android\androidmanifest.png)
 
   어플리케이션이 구동하는데 필요한 요소를 'AndroidManifest'에서 추가, 설정하고
   어플리케이션과 장치간에 상호작용하기 위해 필요한 권한 등을 설정한다.
@@ -51,7 +51,7 @@ date: "2020-02-14 17:35"
 
   b. java 패키지
   <!-- activity 스크린샷. -->
-  ![img](\assets\images\android\MainActivity.png)
+  ![img](\assets\built\images\android\MainActivity.png)
 
   '안드로이드를 프로그래밍한다.' 라고 말하는 부분은 이곳을 수정한다는 얘기와 다르지 않다.
   어플리케이션이 작동하는 방식에 대해 정의하는 java 파일은 모두 이곳에 작성한다.
@@ -63,7 +63,7 @@ date: "2020-02-14 17:35"
 
   c. activity_main.xml
   <!-- activity_main.xml 스크린샷 -->
-  ![img](\assets\images\android\activity_main.png)
+  ![img](\assets\built\images\android\activity_main.png)
 
   연결된 Activity 에서 작성한 코드가 어떻게 보여지는지 이곳에서 수정한다.
   이곳이 사용자가 보게 될 UI 화면이다.
@@ -84,7 +84,7 @@ date: "2020-02-14 17:35"
   어플리케이션에서 사용자가 'Activity'를 동작시키고 다음 'Activity'로 이동할 때까지
   이전 'Activity'의 처음 생성부터 종료될 때까지 어떻게 동작하는지를 말한다.
 
-  ![img](\assets\images\android\lifecycle.png)
+  ![img](\assets\built\images\android\lifecycle.png)
 
   위 이미지를 순서대로 설명하면 아래와 같다.
   1. onCreate - 맨처음 사용자가 액티비티를 동작시키면 onCreate() 메소드가 실행되며 액티비티를 생성한다.

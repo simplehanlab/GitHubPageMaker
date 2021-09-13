@@ -32,19 +32,19 @@ date: "2019-11-28 18:39"
 
   인스타그램 계정으로 로그인한 후 액세스 권한을 받아옵니다.
 
-  ![img](\assets\images\insta\instagram-token.png)
+  ![img](\assets\built\images\insta\instagram-token.png)
 
   그 후 아래와 같이 보이는 페이지에서 원하는 값을 설정 합니다.
 
-  ![img](\assets\images\insta\2019-11-28 185648.png)
+  ![img](\assets\built\images\insta\2019-11-28 185648.png)
 
   아래로 내려 GetCode!를 누르게 되면,
 
   사용할수있는 HTML iframe 태그를 주게 됩니다.
 
-  ![img](\assets\images\insta\last.png)
+  ![img](\assets\built\images\insta\last.png)
 
-  ![img](\assets\images\insta\code.png)
+  ![img](\assets\built\images\insta\code.png)
 
-  ![img](\assets\images\insta\2019-11-29 110155.png)
+  ![img](\assets\built\images\insta\2019-11-29 110155.png)
 

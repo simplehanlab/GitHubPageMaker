@@ -72,7 +72,7 @@ WebSocket은 구버전 브라우저에선 지원하지 않는 다는 단점이 �
 
 그 다음 두가지 객체를 만들어 준다. 하나는 HelloMessage.java 파일로 클라이언트에서 입력한 이름을 받는 객체이다. 나머지 하나는 Greeting.java 파일로 받은 이름과 같이 클라이언트쪽으로 응답할 때 사용하는 객체이다. 일단 com.example.demo.websocket.vo 패키지를 만든 뒤 아래 코드와 같이 객체를 추가해주자.
 
-![add-websocket-1](\assets\images\add-websocket\add-websocket-1.JPG)
+![add-websocket-1](\assets\built\images\add-websocket\add-websocket-1.JPG)
 
 ```java
 package com.example.demo.websocket.vo;
@@ -120,7 +120,7 @@ public class Greeting {
 
 그 다음 com.example.demo.websocket.web 패키지를 만든 뒤 GreetingController.java 파일을 추가하자. 코드는 아래와 같다.
 
-![add-websocket-2](\assets\images\add-websocket\add-websocket-2.JPG)
+![add-websocket-2](\assets\built\images\add-websocket\add-websocket-2.JPG)
 
 ```java
 package com.example.demo.websocket.web;
@@ -153,7 +153,7 @@ public class GreetingController {
 
 이제 JSP에서 테스트 코드를 작성하기 전에, WebSocket 설정 파일을 작성하자. com.example.demo.config 패키지를 만들고 WebSocketConfig.java 파일을 작성하자. 코드는 아래와 같다.
 
-![add-websocket-3](\assets\images\add-websocket\add-websocket-3.JPG)
+![add-websocket-3](\assets\built\images\add-websocket\add-websocket-3.JPG)
 
 ```java
 package com.example.demo.config;
@@ -186,7 +186,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 이제 JSP 파일을 추가해보자. JSP 파일은 src/main/webapp/WEB-INF/jsp 폴더 안에 websocket.jsp로 만들고 코드는 아래와 같이 작성했다.
 
-![add-websocket-4](\assets\images\add-websocket\add-websocket-4.JPG)
+![add-websocket-4](\assets\built\images\add-websocket\add-websocket-4.JPG)
 
 ```jsp
 <%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
@@ -251,13 +251,13 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
 브라우저에서 키보드의 **F12**키를 눌러서 개발자 도구를 연 뒤 **Network**탭을 클릭하자. 그 후 브라우저를 새로고침한 뒤 sockjs 모듈과 stomp 모듈이 제대로 호출되는지 확인해보자. webjars를 이용하여 라이브러리를 직접 추가해주지 않아도 호출되는 모습을 확인할 수 있다.
 
-![add-websocket-5](\assets\images\add-websocket\add-websocket-5.JPG)
+![add-websocket-5](\assets\built\images\add-websocket\add-websocket-5.JPG)
 
 
 
 마지막으로 websocket.js 파일을 추가해주려 한다. src/resources/static/js/websocket 폴더 내에 websocket.js 파일을 추가해주자.
 
-![add-websocket-6](\assets\images\add-websocket\add-websocket-6.JPG)
+![add-websocket-6](\assets\built\images\add-websocket\add-websocket-6.JPG)
 
 
 
@@ -340,19 +340,19 @@ websocket.jsp 파일에 아래 코드를 추가해준다.
 
 이제 브라우저를 새로고침하여 개발자도구 콘솔에서 에러가 없는지 확인 후, **Connect** 버튼을 눌러보자. Connect 버튼을 누른 뒤에 개발자 도구의 콘솔에 아래 이미지와 같이 나타나면 성공이다.
 
-![add-websocket-7](\assets\images\add-websocket\add-websocket-7.JPG)
+![add-websocket-7](\assets\built\images\add-websocket\add-websocket-7.JPG)
 
 
 
 이제 Connected 상태에서 오른쪽 **What is your name?**이라 써있는 간단한 폼에 글자를 입력한 뒤 **Send**버튼을 클릭해보자. 정상작동됬다면 아래 이미지처럼 뜰 것이다.
 
-![add-websocket-8](\assets\images\add-websocket\add-websocket-8.JPG)
+![add-websocket-8](\assets\built\images\add-websocket\add-websocket-8.JPG)
 
 
 
 마지막으로 **Disconnect** 버튼을 클릭하여 연결을 끊어보자. 이 역시 정상작동하면 아래 이미지처럼 나올 것이다.
 
-![add-websocket-9](\assets\images\add-websocket\add-websocket-9.JPG)
+![add-websocket-9](\assets\built\images\add-websocket\add-websocket-9.JPG)
 
 
 
@@ -366,7 +366,7 @@ websocket.jsp 파일에 아래 코드를 추가해준다.
 
 일단 com.example.demo.websocket.service 패키지를 만든 뒤 WebSocketService.java 파일을 만들자.
 
-![add-websocket-10](\assets\images\add-websocket\add-websocket-10.JPG)
+![add-websocket-10](\assets\built\images\add-websocket\add-websocket-10.JPG)
 
 
 

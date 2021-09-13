@@ -25,7 +25,7 @@ date: "2020-02-28 18:00"
 
 상단 메뉴 우측 간편가입을 통해 간편가입 진행
 
-![img](\assets\images\openbank\post_1\openbank_1_1.png)
+![img](\assets\built\images\openbank\post_1\openbank_1_1.png)
 
 
 
@@ -33,9 +33,9 @@ date: "2020-02-28 18:00"
 
 로그인 후 우측 마이페이지 > 내앱 선택 > 내앱 관리에서 앱 등록 후 앱키와 앱 시크릿 키를 발급 받을 수 있다.
 
-![img](\assets\images\openbank\post_1\openbank_1_2.png)
+![img](\assets\built\images\openbank\post_1\openbank_1_2.png)
 
-![img](\assets\images\openbank\post_1\openbank_1_3.png)
+![img](\assets\built\images\openbank\post_1\openbank_1_3.png)
 
 여기서 발급 받은 앱키와 앱 시크릿 키를 이용하여 사용자 인증시에 요청 파라미터에 사용
 
@@ -43,7 +43,7 @@ date: "2020-02-28 18:00"
 
 테스트 베드에서 제공하는 API 콘솔을 이용하여 각 API 별로 요청 파라미터와 응답 데이터에 대한 간단한 API 테스트가 가능하다. 
 
-![img](\assets\images\openbank\post_1\openbank_1_4.png)
+![img](\assets\built\images\openbank\post_1\openbank_1_4.png)
 
 API 의 구조 파악과 통신에 대한 간단한 테스트만 가능 할 뿐 테스트 베드에서 제공하는 테스트 데이터와는 무관한 데이터가 나온다. 
 

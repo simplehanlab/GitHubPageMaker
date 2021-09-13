@@ -96,4 +96,4 @@ date: "2019-11-11 17:25"
   이런식으로 마커의 icon에 해당하는 이미지 src를 넣어주면
   
   다음과 같이 출력됩니다.
-  ![img](\assets\images\google-maps-react\img7.png)
+  ![img](\assets\built\images\google-maps-react\img7.png)
