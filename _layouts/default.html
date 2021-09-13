@@ -60,6 +60,8 @@
                 {% include author_pagination.html %}
             {% elsif page.class == 'tag-template' %}
                 {% include tag_pagination.html %}
+            {% elsif page.class == 'category-template' %}
+                {% include category_pagination.html %}
             {% else %}
                 {% include post_pagination.html %}
             {% endif %}

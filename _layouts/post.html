@@ -27,13 +27,13 @@ into the {body} of the default.hbs template -->
             <header class="post-full-header">
                 <section class="post-full-meta">
                     <time class="post-full-meta-date" datetime="{{ page.date | date:'%e %B %Y' }}">{{ page.date | date:'%e %B %Y' }}</time>
-                    {% if page.tags.size > 0 %}
+                    {% if page.categories.size > 0 %}
                         <span class="date-divider">/</span>
-                        {% for tag in page.tags %}
-                            {% if forloop.index == page.tags.size %}
-                               <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>
+                        {% for category in page.categories %}
+                            {% if forloop.index == page.categories.size %}
+                            <a href='{{ site.baseurl }}category/{{ category | slugify: "latin" }}/'>{{ category | upcase }}</a>
                             {% else %}
-                               <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>,
+                            <a href='{{ site.baseurl }}category/{{ category | slugify: "latin" }}/'>{{ category | upcase }}</a>,
                             {% endif %}
                         {% endfor %}
                     {% endif %}
@@ -53,7 +53,13 @@ into the {body} of the default.hbs template -->
                     {{ content }}
                 </div>
             </section>
-
+            {% for tag in page.tags %}
+                {% if forloop.index == page.tags.size %}
+                <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>
+                {% else %}
+                <a href='{{ site.baseurl }}tag/{{ tag | slugify: "latin" }}/'>{{ tag | upcase }}</a>,
+                {% endif %}
+            {% endfor %}
             <!-- Email subscribe form at the bottom of the page -->
             <!--
             {% if site.subscribers %}
