@@ -15,7 +15,7 @@ subclass: 'post page'
 
 ## [웹/앱 개발]
 - 큐브클래스 홈페이지 개발 [클릭](https://www.cubeclass.co.kr){:target="_blank"}
-![img](\assets\built\images\about\cubeclass.PNG)
+![img](\assets\built\images\about\cubeclass.png)
 - 경상대 항노화 사업 지원 플랫폼 서비스 개발
 ![img](\assets\built\images\about\gnu.png)
 - 미로 모니터링(관리자) 페이지 개발
@@ -34,4 +34,4 @@ subclass: 'post page'
 ##  [IT 컨설팅]
 - 클라우드 서버 컨설팅
 - 가상화폐 거래소 서버 컨설팅
-개발 의뢰 : [kslim@ohcomon.com](mailto:kslim@ohcomon.com){:target="_blank"}
+- 개발 의뢰 : [kslim@ohcomon.com](mailto:kslim@ohcomon.com){:target="_blank"}
