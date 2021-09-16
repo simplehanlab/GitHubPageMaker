@@ -51,7 +51,7 @@
         {{ content }}
 
         <!-- Previous/next page links - displayed on every page -->
-        {% if paginator.total_posts > site.paginate %}
+        {% if paginator.total_posts > site.pagination.per_page %}
             {% if page.class == 'home-template' %}
                 {% include post_pagination.html %}
             {% elsif page.class == 'page-template' %}
@@ -66,7 +66,6 @@
                 {% include post_pagination.html %}
             {% endif %}
         {% endif %}
-
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">

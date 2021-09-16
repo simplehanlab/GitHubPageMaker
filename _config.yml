@@ -26,7 +26,7 @@ highlighter: rouge
 # 2016.02월 이후로 syntax highlighter는 rouge만 지원.
 # Pygments 사용불가.
 
-paginate: 20
+# paginate: 20
 # 작성한 모든 post를 하나의 페이지에 열거할 수 없으니
 # pagination이 필요하고 몇개의 post를 하나의 page에서
 # 보여줄 건지를 설정.
@@ -101,7 +101,16 @@ permalink: /:title
 # 이 값을 바꾸면 작성한 포스트의 저장위치나 파일이름이 변경된다.
 
 # gems and other configs
-plugins: [jekyll-paginate, jekyll-feed, jekyll-gist]
+plugins: [jekyll-paginate-v2, jekyll-feed, jekyll-gist]
+# Pagination Settings
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: '/page/:num/'
+  title: ' - page :num'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
 
 feed:
   path: feed.xml
