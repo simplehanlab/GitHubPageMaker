@@ -3,10 +3,10 @@ layout: category
 current: post
 class: category-template
 navigation: True
-category: build
-permalink: /category/build/
+category: tensorflow
+permalink: /category/tensorflow/
 pagination:
     enabled: true
-    category: build
+    category: tensorflow
     permalink: /:num/
 ---

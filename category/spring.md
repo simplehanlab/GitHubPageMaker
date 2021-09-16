@@ -3,10 +3,10 @@ layout: category
 current: post
 class: category-template
 navigation: True
-category: build
-permalink: /category/build/
+category: spring
+permalink: /category/spring/
 pagination:
     enabled: true
-    category: build
+    category: spring
     permalink: /:num/
 ---

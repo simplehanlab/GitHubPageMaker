@@ -3,10 +3,10 @@ layout: category
 current: post
 class: category-template
 navigation: True
-category: build
-permalink: /category/build/
+category: ssl
+permalink: /category/ssl/
 pagination:
     enabled: true
-    category: build
+    category: ssl
     permalink: /:num/
 ---

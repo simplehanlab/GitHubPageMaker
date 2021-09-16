@@ -8,7 +8,7 @@ author: Simplehan
 title: "Spring 프레임워크를 이용한 프로젝트 생성 (with STS, JSP)"
 comments: true
 categories:
-  - Spring
+  - spring
 tags:
   - Spring
   - STS

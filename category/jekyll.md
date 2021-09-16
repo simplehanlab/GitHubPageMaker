@@ -3,10 +3,10 @@ layout: category
 current: post
 class: category-template
 navigation: True
-category: build
-permalink: /category/build/
+category: jekyll
+permalink: /category/jekyll/
 pagination:
     enabled: true
-    category: build
+    category: jekyll
     permalink: /:num/
 ---

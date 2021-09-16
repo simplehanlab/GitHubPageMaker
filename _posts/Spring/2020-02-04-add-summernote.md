@@ -8,9 +8,9 @@ author: Simplehan
 title: "Spring 프로젝트에 Summernote 적용하기"
 comments: true
 categories:
-  - Spring
+  - spring
 tags:
-  - Spring
+  - spring
   - STS
   - JSP
   - Summernote
