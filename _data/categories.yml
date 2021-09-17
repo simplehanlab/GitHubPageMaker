@@ -18,16 +18,16 @@ minimal-mistakes:
   name: minimal-mistakes
   description: False
   cover: assets/built/images/background-frontend.jpg
-SSL:
-  name: SSL
+ssl:
+  name: ssl
   description: False
   cover: assets/built/images/background-frontend.jpg
 tensorflow:
   name: tensorflow
   description: False
   cover: assets/built/images/background-frontend.jpg
-SSH:
-  name: SSH
+ssh:
+  name: ssh
   description: False
   cover: assets/built/images/background-frontend.jpg
 python :

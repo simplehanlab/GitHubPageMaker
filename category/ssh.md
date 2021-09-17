@@ -3,10 +3,10 @@ layout: category
 current: post
 class: category-template
 navigation: True
-category: ssh
+category: SSH
 permalink: /category/ssh/
 pagination:
     enabled: true
-    category: ssh
+    category: SSH
     permalink: /:num/
 ---
